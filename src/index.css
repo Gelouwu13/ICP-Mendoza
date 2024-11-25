@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f0ef;
+}
+nav {
+    position: fixed;
+    margin: 2em;
+    font-family: Markthin;
+    text-decoration: none;
+    color: #0E1111;
+}
+nav a {
+    text-decoration: none;
+    color: #0E1111;
+    opacity: 50%;
+    font-weight: bolder;
+}
+nav a:hover {
+    transform: scale(1.1);
+    transition: 100ms;
+    opacity: 100%;
+}
+.navlinks {
+    display: flex;
+    gap: 2em;
+    font-size: 1.5em;
+    font-weight: bold;
+    opacity: 50%;
+}
+.textlimit {
+    font-weight: bold;
+    font-family: Markthin;
+    font-size: 2em;
+}
+.modal-container {
+    display: flex;
+    justify-content: space-between;
+}
+.modal-1 {
+    margin-top: 14em;
+    margin-left: 5em;
+    
+}
+.modal-2 {
+    animation: 3s ease-out 1 opacity;
+}
+.modal-2 img {
+    animation: 2s ease-out 1 slideInFromRight;
+}
+.modal-1 {
+    animation: 3s ease-out 1 opacity;
+}
+.modal-1 p, h3 {
+    animation: 2s ease-out 1 slideInFromLeft;
+}
+
+.modal-3 {
+    color: #f2f0ef;
+    padding: 5em;
+    margin-top: -5px;
+    background-color: #8d6f59;
+}
+.headtext {
+    color: #0E1111;
+    text-align: center;
+    font-family: Mark;
+    font-size: 7em;   
+    margin-bottom: 0;
+    cursor: pointer;
+}
+.headtext:hover {
+    transform: scale(1.1);
+    transition:250ms;
+}
+.subtext {
+    text-align: left;
+    font-family: Mark;
+    font-size: 2em;
+    margin-top: 0;
+}
+@font-face {
+    font-family: Mark;
+    src: url(/Fonts/Uni\ Sans\ Heavy.otf);
+}
+@font-face {
+    font-family: Markthin;
+    src: url(/Fonts/Uni\ Sans\ Thin.otf);
+}
+
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    80% {
+      transform: translateX(0%);
+    }
+    90% {
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+  }
+  @keyframes capy {
+    0% {
+        transform: translateY(-300%);
+      }
+      100% {
+        transform: translateY(0%);
+      }
+  }
+@keyframes opacity {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
